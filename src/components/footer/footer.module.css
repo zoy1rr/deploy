@@ -1,0 +1,207 @@
+.footer {
+    background: linear-gradient(135deg, #1f1f1f, #111);
+    color: #fff;
+    padding: 50px 20px 20px 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.section {
+    flex: 1;
+    min-width: 250px;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: 700;
+    color: #ff4d4f;
+    margin-bottom: 15px;
+}
+
+.text {
+    font-size: 14px;
+    line-height: 1.8;
+    color: #ccc;
+}
+
+.heading {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #ff4d4f;
+}
+
+.list {
+    list-style: none;
+    padding: 0;
+}
+
+.list li {
+    margin-bottom: 8px;
+}
+
+.list li a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.list li a:hover {
+    color: #ff4d4f;
+}
+
+.socials {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.social {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: #ff4d4f;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: transform 0.3s, background 0.3s;
+}
+
+.social:hover {
+    transform: scale(1.1);
+    background: #e03e3f;
+}
+
+.bottom {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 13px;
+    color: #777;
+    border-top: 1px solid #333;
+    padding-top: 15px;
+}
+
+@media (max-width: 800px) and (min-width: 396px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .section {
+        min-width: unset;
+        width: 80%;
+        text-align: center;
+    }
+
+    .logo {
+        font-size: 22px;
+    }
+
+    .text {
+        font-size: 13px;
+        line-height: 1.5;
+    }
+
+    .heading {
+        font-size: 16px;
+    }
+
+    .list li {
+        margin-bottom: 6px;
+    }
+
+    .list li a {
+        font-size: 14px;
+    }
+
+    .socials {
+        justify-content: center;
+    }
+
+    .social {
+        width: 32px;
+        height: 32px;
+        font-size: 16px;
+    }
+
+    /* Shu yerda ba’zi yozuvlarni yashirish */
+    .section:nth-child(1) .text {
+        display: none;
+        /* Logo ostidagi ta’rifni yashiradi */
+    }
+
+    .bottom {
+        font-size: 12px;
+        padding-top: 10px;
+    }
+}
+
+@media (max-width: 395px) and (min-width: 320px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        padding: 20px 10px;
+    }
+
+    .section {
+        width: 100%;
+        text-align: center;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .text {
+        font-size: 12px;
+        line-height: 1.4;
+    }
+
+    .heading {
+        font-size: 14px;
+    }
+
+    .list li {
+        margin-bottom: 5px;
+    }
+
+    .list li a {
+        font-size: 13px;
+    }
+
+    .socials {
+        justify-content: center;
+        gap: 8px;
+    }
+
+    .social {
+        width: 28px;
+        height: 28px;
+        font-size: 14px;
+    }
+
+    .bottom {
+        font-size: 11px;
+        padding-top: 8px;
+    }
+
+    /* Mobil uchun ba’zi bo‘limlarni yashirish */
+    .section:nth-child(1) .text,
+    .section:nth-child(2) {
+        display: none;
+
+    }
+}

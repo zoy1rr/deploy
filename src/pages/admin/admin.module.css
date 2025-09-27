@@ -1,0 +1,536 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1420px;
+  margin: 0 auto;
+}
+
+
+/* ======= Admin Panel Container ======= */
+.admin {
+  display: flex;
+  min-height: 100vh;
+  background: #f4f7fb;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ======= Sidebar ======= */
+.sidebar {
+  width: 250px;
+  background: #2f3a8f;
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar h2 {
+  margin-bottom: 20px;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex: 1;
+}
+
+.sidebar li {
+  padding: 12px 15px;
+  cursor: pointer;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+}
+
+.sidebar li:hover,
+.sidebar li.active {
+  background: #4752b8;
+}
+
+/* ======= Main Content ======= */
+.content {
+  flex: 1;
+  padding: 25px 30px;
+  overflow-x: auto;
+}
+
+h3 {
+  margin-bottom: 20px;
+  color: #2f3a8f;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+/* ======= Table Styling ======= */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+th,
+td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+  color: #4752b8;
+  font-size: 15px;
+}
+
+th {
+  background: #2f3a8f;
+  color: #e3e3e3;
+  font-weight: 600;
+}
+
+/* ======= Buttons ======= */
+.deleteBtn {
+  background: crimson;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.deleteBtn:hover {
+  background: darkred;
+}
+
+button {
+  cursor: pointer;
+  padding: 6px 14px;
+  border: none;
+  border-radius: 6px;
+  background: #2f3a8f;
+  color: white;
+  font-size: 14px;
+  margin-right: 6px;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: #4752b8;
+}
+
+
+.addBox,
+.editBox {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  background: #eef1fc;
+  padding: 15px;
+  border-radius: 8px;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  height: 500px;
+}
+
+.addBox input,
+.editBox input {
+  width: 200px;
+  border-radius: 6px;
+  flex-direction: column;
+  border: 1px solid #ccc;
+  color: #4752b8;
+  font-size: 14px;
+  flex: 1;
+  min-width: 120px;
+}
+.addBox input{
+  width: 100%;
+}
+.editBox {
+  display: flex;
+  align-items: center;
+}
+
+.editBox h4 {
+  color: #2f3a8f;
+}
+
+.addBox button,
+.editBox button {
+  flex-shrink: 0;
+}
+
+/* ======= Images in Table ======= */
+td img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* ======= Loader / Message ======= */
+.admin div p {
+  color: #2f3a8f;
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+/* ======= Support Chat ======= */
+.supportContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.chatBox {
+  height: 400px;
+  overflow-y: auto;
+  background: #2c2f33;
+  border-radius: 12px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+}
+
+.message {
+  display: flex;
+  flex-direction: column;
+  max-width: 70%;
+  padding: 10px 14px;
+  margin: 6px 0;
+  border-radius: 18px;
+  word-wrap: break-word;
+  font-size: 14px;
+  height: auto;
+}
+.admin2{
+    background: #7289da;
+
+}
+
+.admin {
+  align-self: flex-end;
+  background: #7289da;
+  color: white;
+  border-bottom-right-radius: 4px;
+  width: 100%;
+}
+
+.user {
+  align-self: flex-start;
+  background: #99aab5;
+  color: black;
+  border-bottom-left-radius: 4px;
+}
+
+.text {
+  margin-bottom: 4px;
+}
+
+.time {
+  font-size: 0.7rem;
+  color: rgba(255, 255, 255, 0.7);
+  align-self: flex-end;
+}
+
+.inputContainer {
+  display: flex;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+input {
+  flex: 1;
+  padding: 10px 14px;
+  border-radius: 18px;
+  border: none;
+  outline: none;
+  background: #40444b;
+  color: #e0e0e0;
+}
+
+input::placeholder {
+  color: #b9bbbe;
+}
+
+button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 18px;
+  cursor: pointer;
+  background: #7289da;
+  color: white;
+  font-weight: 500;
+}
+
+.clearBtn {
+  background: #f04747;
+}
+
+.message {
+  display: flex;
+  flex-direction: column;
+  max-width: 70%;
+  /* xabar qutisi kengligi */
+  padding: 10px 14px;
+  margin: 6px 0;
+  border-radius: 18px;
+  word-wrap: break-word;
+  font-size: 14px;
+  height: auto;
+  /* bu yerini 100px dan auto qilamiz */
+}
+
+.admin {
+  align-self: flex-end;
+ 
+  color: white;
+  border-bottom-right-radius: 4px;
+  height: auto;
+  /* shuningdek shu yerda ham auto bo‘lsin */
+}
+
+.user {
+  align-self: flex-start;
+  background: #99aab5;
+  color: black;
+  border-bottom-left-radius: 4px;
+  height: auto;
+  /* shu yerda ham */
+}
+
+/* ======= Support Container ======= */
+.supportContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 800px;
+  margin: 20px auto;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ======= Header ======= */
+.supportHeader {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #333;
+  text-align: center;
+}
+
+/* ======= Chat Box ======= */
+.chatBox {
+  flex: 1;
+  min-height: 300px;
+  max-height: 400px;
+  overflow-y: auto;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* ======= Individual Messages ======= */
+.message {
+  display: flex;
+  flex-direction: column;
+  max-width: 70%;
+  padding: 10px 15px;
+  border-radius: 12px;
+  word-wrap: break-word;
+  font-size: 0.95rem;
+  position: relative;
+}
+
+/* Admin messages */
+.adminMessage {
+  align-self: flex-start;
+  background-color: #e1f5fe;
+  color: #0277bd;
+}
+
+/* User messages */
+.userMessage {
+  align-self: flex-end;
+  background-color: #c8e6c9;
+  color: #2e7d32;
+}
+
+/* Message text */
+.messageText {
+  margin-bottom: 5px;
+}
+
+/* Message timestamp */
+.messageTime {
+  font-size: 0.75rem;
+  color: #999;
+  text-align: right;
+}
+
+/* Chat end reference */
+.chatEndRef {
+  height: 1px;
+}
+
+/* ======= Input Section ======= */
+.inputContainer {
+  display: flex;
+  margin-top: 15px;
+  gap: 10px;
+}
+
+/* Text input */
+.supportInput {
+  flex: 1;
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: all 0.2s;
+}
+
+.supportInput:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+/* Send button */
+.sendButton {
+  padding: 10px 20px;
+  background-color: #007bff;
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.sendButton:hover {
+  background-color: #0056b3;
+}
+
+/* Clear button */
+.clearButton {
+  padding: 10px 20px;
+  background-color: #f44336;
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.clearButton:hover {
+  background-color: #c62828;
+}
+
+/* ======= Individual Messages ======= */
+.message {
+  display: inline-block;
+  max-width: 70%;
+  padding: 10px 15px;
+  border-radius: 12px;
+  word-wrap: break-word;
+  font-size: 0.95rem;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+/* Admin messages - O'ng tomonda */
+.adminMessage {
+  background-color: #c8e6c9;
+  /* o‘zingiz rangini tanlashingiz mumkin */
+  color: #2e7d32;
+  align-self: flex-end;
+  /* o'ng tomonga surish */
+  text-align: right;
+  margin-left: auto;
+}
+
+.addBox input {
+  color: #ffffff;
+  background-color: #7e8c95;
+}
+
+/* User messages - Chap tomonda */
+.userMessage {
+  background-color: #e1f5fe;
+  /* o‘zingiz rangini tanlashingiz mumkin */
+  color: #0277bd;
+  align-self: flex-start;
+  /* chap tomonga surish */
+  text-align: left;
+  margin-right: auto;
+}
+
+
+/* ======= Responsive ======= */
+@media (max-width: 900px) {
+  .sidebar {
+    width: 200px;
+    padding: 15px;
+  }
+
+  .content {
+    padding: 20px;
+  }
+
+  table th,
+  table td {
+    font-size: 13px;
+    padding: 10px 8px;
+  }
+}
+
+@media (max-width: 600px) {
+  .admin {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    flex-direction: row;
+    overflow-x: auto;
+  }
+
+  .sidebar ul {
+    display: flex;
+    gap: 10px;
+  }
+
+  .sidebar li {
+    flex-shrink: 0;
+  }
+
+  .addBox,
+  .editBox {
+    flex-direction: column;
+  }
+
+  .chatBox {
+    height: 300px;
+  }
+}

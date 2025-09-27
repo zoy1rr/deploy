@@ -1,0 +1,243 @@
+/* zakaz.module.css */
+
+.container {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  background: #ffffff;
+  min-height: 100vh;
+  color: #111827;
+  font-family: "Inter", sans-serif;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 30px;
+}
+
+.header h2 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #111827;
+}
+
+.backBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.backBtn:hover {
+  color: #1d4ed8;
+}
+
+/* Form */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.sectionTitle {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #374151;
+}
+
+.inputGroup {
+  display: flex;
+  align-items: center;
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 10px 14px;
+  gap: 10px;
+  transition: border 0.3s ease;
+}
+
+.inputGroup:focus-within {
+  border-color: #2563eb;
+}
+
+.inputGroup input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 15px;
+  color: #111827;
+}
+
+.icon {
+  color: #6b7280;
+  font-size: 16px;
+}
+
+.radioGroup {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.radioGroup label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 14px;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.radioGroup input {
+  accent-color: #2563eb;
+}
+
+.radioGroup label:hover {
+  border-color: #2563eb;
+  background: #f0f9ff;
+}
+
+/* Promo */
+.promoGroup {
+  display: flex;
+  gap: 10px;
+}
+
+.promoGroup input {
+  flex: 1;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 10px 14px;
+  font-size: 14px;
+  outline: none;
+}
+
+.promoGroup button {
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.promoGroup button:hover {
+  background: #1d4ed8;
+}
+
+/* Cart */
+.cartPreview {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.cartItem {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 10px;
+  background: #f9fafb;
+}
+
+.cartItem img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.cartItem p {
+  font-size: 15px;
+  font-weight: 500;
+  color: #111827;
+}
+
+.cartItem span {
+  font-size: 14px;
+  color: #374151;
+}
+
+/* Total */
+.total {
+  margin-top: 12px;
+  font-size: 15px;
+  color: #111827;
+}
+
+.discount {
+  color: #16a34a;
+  font-weight: 500;
+}
+
+.final {
+  font-size: 16px;
+  font-weight: 600;
+  color: #111827;
+}
+
+/* Submit button */
+.submitBtn {
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  padding: 14px 18px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+
+.submitBtn:hover {
+  transform: translateY(-2px);
+  background: linear-gradient(135deg, #1d4ed8, #1e40af);
+}
+
+/* Success */
+.success {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.success h3 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #16a34a;
+  margin-bottom: 10px;
+}
+
+.success p {
+  font-size: 15px;
+  color: #374151;
+  margin-bottom: 20px;
+}
+
+.homeBtn {
+  display: inline-block;
+  background: #2563eb;
+  color: #fff;
+  padding: 12px 18px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.homeBtn:hover {
+  background: #1d4ed8;
+}

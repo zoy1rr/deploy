@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1220px;
+    margin: 0 auto;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.bg header img {
+    width: 200px;
+}
+
+.Men {
+    background: linear-gradient(90deg, #4a00e0, #8e2de2);
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 200px;
+}
+
+
+/* right.module.css */
+.right {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+/* Input style */
+.right input {
+    padding: 10px 15px;
+    border: 2px solid #ccc;
+    border-radius: 30px;
+    outline: none;
+    width: 200px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.right input:focus {
+    border-color: #0088cc;
+    box-shadow: 0 0 8px rgba(0, 136, 204, 0.3);
+}
+
+/* Button style */
+.right button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: #c4c4c4;
+    color: #2b2a3c;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.right button i {
+    font-size: 18px;
+}
+
+/* Hover effect */
+.right button:hover {
+    background: #a4a4a4;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 136, 204, 0.3);
+}
+
+/* Responsive for mobile */
+@media (max-width: 500px) {
+    .right {
+        flex-direction: column;
+    }
+
+    .right input {
+        width: 100%;
+    }
+
+    .right button {
+        width: 100%;
+        justify-content: center;
+    }
+}

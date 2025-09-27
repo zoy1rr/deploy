@@ -1,0 +1,1132 @@
+/* products.module.css */
+
+/* Umumiy container */
+.container {
+    max-width: 1200px;
+    margin: 0px auto;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    flex-wrap: wrap;
+    font-family: "Poppins", sans-serif;
+}
+
+
+/* Card */
+.card {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    padding: 30px;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Image qismi */
+.images {
+    flex: 1;
+    min-width: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mainImg {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 16px;
+    object-fit: cover;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.mainImg:hover {
+    transform: scale(1.02);
+}
+
+/* Thumbnail */
+.gallery {
+    margin-top: 15px;
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+}
+
+.gallery img {
+    width: 80px;
+    height: 80px;
+    border-radius: 12px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.gallery img:hover {
+    border-color: #36d7b7;
+    transform: scale(1.05);
+}
+
+.activeThumb {
+    border: 2px solid #36d7b7 !important;
+}
+
+/* Details qismi */
+.details {
+    flex: 1;
+    min-width: 320px;
+}
+
+.name {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+.category {
+    font-size: 15px;
+    color: #777;
+    margin-bottom: 6px;
+}
+
+.price {
+    font-size: 20px;
+    font-weight: 600;
+    color: #36d7b7;
+    margin-bottom: 20px;
+}
+
+/* Options */
+.option {
+    margin-bottom: 20px;
+}
+
+.option label {
+    font-weight: 600;
+    margin-bottom: 10px;
+    display: block;
+    color: #333;
+}
+
+.optionsList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.optionBtn {
+    padding: 10px 16px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    background: #f9f9f9;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.optionBtn:hover {
+    border-color: #36d7b7;
+    background: #e6fffa;
+}
+
+.selectedColor,
+.selectedSize {
+    border-color: #657f7a !important;
+    background: #e5e5e5 !important;
+    color: #222 !important;
+}
+
+.selectedLabel {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #444;
+    font-style: italic;
+}
+
+.modal p {
+    font-size: 14px;
+    color: #555;
+}
+
+/* Sotib olish button */
+.buyBtn {
+    width: 100%;
+    padding: 14px 20px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #36d7b7, #3ac8ff);
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.buyBtn:hover:enabled {
+    opacity: 0.9;
+    transform: translateY(-2px);
+}
+
+.buyBtn:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
+
+/* Description */
+.description {
+    margin-top: 30px;
+    line-height: 1.6;
+}
+
+.description h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.p {
+    font-size: 15px;
+    color: #555;
+}
+
+/* Qaytish button */
+.qaytish {
+    position: absolute;
+    top: 90px;
+    left: 20px;
+    font-size: 25px;
+    border: none;
+    background: #fff;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+}
+
+.qaytish:hover {
+    background: none;
+}
+
+/* Modal umumiy */
+.modalBackdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99;
+}
+
+.modal {
+    background: #fff;
+    padding: 30px;
+    border-radius: 16px;
+    max-width: 400px;
+    width: 90%;
+    text-align: center;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.modal h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #222;
+}
+
+.modalButtons {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.yesBtn,
+.noBtn,
+.closeBtn {
+    flex: 1;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.yesBtn {
+    background: #36d7b7;
+    color: white;
+}
+
+.noBtn {
+    background: #eee;
+}
+
+.noBtn:hover {
+    background: #ddd;
+}
+
+.yesBtn:hover {
+    background: #2fb4a0;
+}
+
+.closeBtn {
+    background: #36d7b7;
+    color: #fff;
+    margin-top: 15px;
+}
+
+.closeBtn:hover {
+    background: #2fb4a0;
+}
+
+/* Loader */
+.loaderContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+
+.loading {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 40px;
+    color: #666;
+}
+
+.images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 500px;
+}
+.qaytish{
+    color: #222;
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    margin-left: 100px;
+    background: none;
+    box-shadow: none;
+}
+.qaytish2{
+    font-size: 30px;
+    box-shadow: none;
+}
+/* Asosiy katta rasm joylashadigan container */
+.mainImgWrapper {
+    width: 400px;
+    /* doimiy eni */
+    height: 900px;
+    /* doimiy balandligi */
+    border-radius: 16px;
+    overflow: hidden;
+    /* rasm chiqib ketmasligi uchun */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* rasm yo‘q bo‘lsa fon */
+}
+.optionsList button{
+    color: #222;
+}
+
+/* Ichidagi rasm */
+.mainImg {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    /* rasm butunlay sig‘adi, cho‘zilmaydi */
+    transition: transform 0.3s ease;
+}
+
+.mainImg:hover {
+    transform: scale(1.05);
+}
+
+ 
+
+@media (max-width: 768px) {
+    .card {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .mainImg {
+        max-width: 100%;
+    }
+
+    .gallery img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .name {
+        font-size: 22px;
+    }
+
+    .price {
+        font-size: 18px;
+    }
+
+    .buyBtn {
+        font-size: 16px;
+    }
+
+    .details {
+        text-align: center;
+    }
+
+    .option {
+        text-align: center;
+    }
+
+    .optionBtn {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+
+    .selectedLabel {
+        font-size: 12px;
+    }
+
+    .qaytish {
+        top: 20px;
+        left: 10px;
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+    }
+
+    .modal {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .modal h2 {
+        font-size: 18px;
+    }
+
+    .modalButtons {
+        flex-direction: column;
+    }
+
+    .yesBtn,
+    .noBtn,
+    .closeBtn {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .yesBtn {
+        padding: 12px;
+    }
+
+    .noBtn {
+        padding: 12px;
+    }
+
+    .closeBtn {
+        padding: 12px;
+    }
+
+    .loaderContainer {
+        height: 100vh;
+    }
+
+    .loading {
+        font-size: 16px;
+    }
+
+    .images {
+        height: auto;
+    }
+
+    .mainImgWrapper {
+        width: 100%;
+        height: 400px;
+    }
+
+    .mainImg {
+        width: 100%;
+        height: 100%;
+    }
+
+    .gallery {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .gallery img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .support {
+        display: none;
+    }
+
+    .support:hover {
+        background-color: #782aff;
+        transition: 0.5s;
+    }
+
+    .bg {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 14px;
+    }
+
+    .menu_card i,
+    p {
+        font-size: 12px;
+    }
+
+    .menu_card i {
+        font-size: 16px;
+    }
+
+    .menu_card {
+        padding: 12px 0;
+    }
+
+    .menu {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .menu {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .menu_card {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        color: aliceblue;
+        padding: 12px 0;
+    }
+
+    .menu_card i,
+    p {
+        color: white;
+        font-size: 10px;
+    }
+
+    .menu_card i {
+        font-size: 15px;
+    }
+
+    .support {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        padding: 5px 10px;
+        color: #fff;
+        font-size: 14px;
+        border-radius: 10px;
+    }
+
+    .support:hover {
+        background-color: #782aff;
+        transition: 0.5s;
+    }
+
+    .support {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        padding: 5px 10px;
+        color: #fff;
+        font-size: 14px;
+        border-radius: 10px;
+    }
+
+    .support:hover {
+        background-color: #782aff;
+        transition: 0.5s;
+    }
+
+    .support {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        padding: 5px 10px;
+        color: #fff;
+        font-size: 14px;
+        border-radius: 10px;
+    }
+
+    .support:hover {
+        background-color: #782aff;
+        transition: 0.5s;
+    }
+
+    .support {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        padding: 5px 10px;
+        color: #fff;
+        font-size: 14px;
+        border-radius: 10px;
+    }
+
+    .support:hover {
+        background-color: #782aff;
+        transition: 0.5s;
+    }
+
+    .support {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        padding: 5px 10px;
+        color: #fff;
+        font-size: 14px;
+        border-radius: 10px;
+    }
+
+    .support:hover {
+        background-color: #782aff;
+        transition: 0.5s;
+    }
+
+    .support {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        padding: 5px 10px;
+        color: #fff;
+        font-size: 14px;
+        border-radius: 10px;
+    }
+
+    .support:hover {
+        background-color: #782aff;
+        transition: 0.5s;
+    }
+
+    .support {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        padding: 5px 10px;
+        color: #fff;
+        font-size: 14px;
+        border-radius: 10px;
+    }
+
+    .support:hover {
+        background-color: #782aff;
+        transition: 0.5s;
+    }
+
+    .support {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        padding: 5px 10px;
+        color: #fff;
+        font-size: 14px;
+        border-radius: 10px;
+    }
+
+    .support:hover {
+        background-color: #782aff;
+        transition: 0.5s;
+    }
+
+    .support {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        padding: 5px 10px;
+        color: #fff;
+        font-size: 14px;
+        border-radius: 10px;
+    }
+
+    .support:hover {
+        background-color: #782aff;
+        transition: 0.5s;
+    }
+
+    .support {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        padding: 5px 10px;
+        color: #fff;
+        font-size: 14px;
+        border-radius: 10px;
+    }
+
+    .support:hover {
+        background-color: #782aff;
+        transition: 0.5s;
+    }
+
+    .support {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        padding: 5px 10px;
+        color: #fff;
+        font-size: 14px;
+        border-radius: 10px;
+    }
+
+    .support:hover {
+        background-color: #782aff;
+        transition: 0.5s;
+    }
+
+    .support {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        padding: 5px 10px;
+        color: #fff;
+        font-size: 14px;
+        border-radius: 10px;
+    }
+
+    .support:hover {
+        background-color: #782aff;
+        transition: 0.5s;
+    }
+
+    .support {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        padding: 5px 10px;
+        color: #fff;
+        font-size: 14px;
+        border-radius: 10px;
+    }
+
+    .support:hover {
+        background-color: #782aff;
+        transition: 0.5s;
+    }
+
+    .support {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        padding: 5px 10px;
+        color: #fff;
+        font-size: 14px;
+        border-radius: 10px;
+    }
+
+    .support:hover {
+        background-color: #782aff;
+        transition: 0.5s;
+    }
+
+    .support {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        padding: 5px 10px;
+        color: #fff;
+        font-size: 14px;
+        border-radius: 10px;
+    }
+
+    .support:hover {
+        background-color: #782aff;
+        transition: 0.5s;
+    }
+
+    .support {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        padding: 5px 10px;
+        color: #fff;
+        font-size: 14px;
+        border-radius: 10px;
+    }
+
+    .support:hover {
+        background-color: #782aff;
+        transition: 0.5s;
+    }
+
+    .support {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        padding: 5px 10px;
+        color: #fff;
+        font-size: 14px;
+        border-radius: 10px;
+    }
+
+    .support:hover {
+        background-color: #782aff;
+        transition: 0.5s;
+    }
+
+    .support {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        padding: 5px 10px;
+        color: #fff;
+        font-size: 14px;
+        border-radius: 10px;
+    }
+
+    .support:hover {
+        background-color: #782aff;
+        transition: 0.5s;
+    }
+
+    .support {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        padding: 5px 10px;
+        color: #fff;
+        font-size: 14px;
+        border-radius: 10px;
+    }
+
+    .support:hover {
+        background-color: #782aff;
+        transition: 0.5s;
+    }
+
+    .support {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        padding: 5px 10px;
+        color: #fff;
+        font-size: 14px;
+        border-radius: 10px;
+    }
+
+    .support:hover {
+        background-color: #782aff;
+        transition: 0.5s;
+    }
+
+    .support {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        padding: 5px 10px;
+        color: #fff;
+        font-size: 14px;
+        border-radius: 10px;
+    }
+
+    .support:hover {
+        background-color: #782aff;
+        transition: 0.5s;
+    }
+
+    .support {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        padding: 5px 10px;
+        color: #fff;
+        font-size: 14px;
+        border-radius: 10px;
+    }
+
+    .support:hover {
+        background-color: #782aff;
+        transition: 0.5s;
+    }
+
+    .support {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        padding: 5px 10px;
+        color: #fff;
+        font-size: 14px;
+        border-radius: 10px;
+    }
+
+    .support:hover {
+        background-color: #782aff;
+        transition: 0.5s;
+    }
+
+    .support {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        padding: 5px 10px;
+        color: #fff;
+        font-size: 14px;
+        border-radius: 10px;
+    }
+
+    .support:hover {
+        background-color: #782aff;
+        transition: 0.5s;
+    }
+
+    .support {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        padding: 5px 10px;
+        color: #fff;
+        font-size: 14px;
+        border-radius: 10px;
+    }
+
+    .support:hover {
+        background-color: #782aff;
+        transition: 0.5s;
+    }
+
+    .support {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        padding: 5px 10px;
+        color: #fff;
+        font-size: 14px;
+        border-radius: 10px;
+    }
+
+    .support:hover {
+        background-color: #782aff;
+        transition: 0.5s;
+    }
+
+    .support {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        padding: 5px 10px;
+        color: #fff;
+        font-size: 14px;
+        border-radius: 10px;
+    }
+
+    .support:hover {
+        background-color: #782aff;
+        transition: 0.5s;
+    }
+
+    .support {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        padding: 5px 10px;
+        color: #fff;
+        font-size: 14px;
+        border-radius: 10px;
+    }
+
+    .support:hover {
+        background-color: #782aff;
+        transition: 0.5s;
+    }
+
+    .support {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        padding: 5px 10px;
+        color: #fff;
+        font-size: 14px;
+        border-radius: 10px;
+    }
+
+    .support:hover {
+        background-color: #782aff;
+        transition: 0.5s;
+    }
+
+    .support {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        padding: 5px 10px;
+        color: #fff;
+        font-size: 14px;
+        border-radius: 10px;
+    }
+
+    .support:hover {
+        background-color: #782aff;
+        transition: 0.5s;
+    }
+
+    .support {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        padding: 5px 10px;
+        color: #fff;
+        font-size: 14px;
+        border-radius: 10px;
+    }
+
+    .support:hover {
+        background-color: #782aff;
+        transition: 0.5s;
+    }
+
+    .support {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        padding: 5px 10px;
+        color: #fff;
+        font-size: 14px;
+        border-radius: 10px;
+    }
+
+    .support:hover {
+        background-color: #782aff;
+        transition: 0.5s;
+    }
+
+    .support {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        padding: 5px 10px;
+        color: #fff;
+        font-size: 14px;
+        border-radius: 10px;
+    }
+
+    .support:hover {
+        background-color: #782aff;
+        transition: 0.5s;
+    }
+
+    .support {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        padding: 5px 10px;
+        color: #fff;
+        font-size: 14px;
+        border-radius: 10px;
+    }
+
+    .support:hover {
+        background-color: #782aff;
+        transition: 0.5s;
+    }
+
+    .support {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        padding: 5px 10px;
+        color: #fff;
+        font-size: 14px;
+        border-radius: 10px;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+
+    }
+
+} 

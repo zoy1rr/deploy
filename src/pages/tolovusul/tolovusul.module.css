@@ -1,0 +1,261 @@
+:root {
+    --bg: #f7f7f9;
+    --card: #ffffff;
+    --border: #e2e8f0;
+    --text: #1f2937;
+    --text-light: #6b7280;
+    --primary: #2563eb;
+    --primary-hover: #1d4ed8;
+    --success: #16a34a;
+    --error: #dc2626;
+    --warning: #d97706;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.wrap {
+    max-width: 1100px;
+    margin: 20px auto;
+    padding: 16px;
+    color: var(--text);
+    font-family: sans-serif;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.layout {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 20px;
+}
+
+.left {
+    display: grid;
+    gap: 16px;
+}
+
+/* to'lov usullari */
+.methods {
+    display: grid;
+    gap: 10px;
+}
+
+.method {
+    border: 1px solid var(--border);
+    background: var(--card);
+    padding: 14px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: border-color 0.2s ease, background 0.2s ease;
+    text-align: left;
+}
+
+.method:hover {
+    background: #f1f5f9;
+}
+
+.active {
+    border-color: var(--primary);
+    background: #eff6ff;
+}
+
+.methodHeader {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.methodTitle {
+    font-weight: 600;
+}
+
+.methodDesc {
+    color: var(--text-light);
+    font-size: 14px;
+    margin-top: 3px;
+}
+
+/* forma */
+.form {
+    border: 1px solid var(--border);
+    background: var(--card);
+    padding: 16px;
+    border-radius: 10px;
+}
+
+.section {
+    display: grid;
+    gap: 14px;
+}
+
+.grid2 {
+    display: grid;
+    gap: 12px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+@media (max-width: 600px) {
+    .grid2 {
+        grid-template-columns: 1fr;
+    }
+}
+
+.field {
+    display: grid;
+    gap: 6px;
+}
+
+.field label {
+    font-size: 13px;
+    color: var(--text-light);
+}
+
+.field input,
+.field textarea {
+    border: 1px solid var(--border);
+    padding: 10px 12px;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.field input:focus,
+.field textarea:focus {
+    border-color: var(--primary);
+    outline: none;
+}
+
+.infoBox {
+    background: #f9fafb;
+    border: 1px solid var(--border);
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 14px;
+    color: var(--text-light);
+}
+
+/* checkbox */
+.agreeRow {
+    margin-top: 8px;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+}
+
+/* xabarlar */
+.message {
+    margin: 12px 0;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.success {
+    background: #dcfce7;
+    color: var(--success);
+}
+
+.error {
+    background: #fee2e2;
+    color: var(--error);
+}
+
+.warning {
+    background: #fef3c7;
+    color: var(--warning);
+}
+
+/* tugma */
+.payBtn {
+    width: 100%;
+    background: var(--primary);
+    color: white;
+    font-weight: 600;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.payBtn:hover {
+    background: var(--primary-hover);
+}
+
+.payBtn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* o'ng taraf */
+.right {
+    position: sticky;
+    top: 16px;
+    height: fit-content;
+}
+
+.summaryCard {
+    border: 1px solid var(--border);
+    background: var(--card);
+    padding: 16px;
+    border-radius: 10px;
+}
+
+.summaryTitle {
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.summaryRow {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    padding: 6px 0;
+}
+
+.total {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.divider {
+    height: 1px;
+    background: var(--border);
+    margin: 8px 0;
+}
+
+.microNote {
+    font-size: 12px;
+    color: var(--text-light);
+    margin-top: 6px;
+}
+
+.layout {
+    grid-template-columns: 1.5fr 0.5fr;
+    gap: 20px;
+
+}
+
+
+
+
+
+@media (max-width: 900px) {
+    .layout {
+        grid-template-columns: 1fr;
+    }
+
+    .right {
+        position: static;
+        order: -1;
+    }
+}

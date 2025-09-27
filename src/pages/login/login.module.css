@@ -1,0 +1,268 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1220px;
+  margin: 0 auto;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+
+/* login.module.css */
+
+.konteyner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  font-family: 'Poppins', sans-serif;
+}
+
+.karta {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+  width: 400px;
+  max-width: 100%;
+  padding: 40px 30px;
+  position: relative;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.karta:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.2);
+}
+
+.sarlavha {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.tagline {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.forma {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.maydon {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.yorliq {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.kiritish {
+  padding: 12px 15px;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+}
+
+.kiritish:focus {
+  outline: none;
+  border-color: #2575fc;
+  box-shadow: 0 0 8px rgba(37, 117, 252, 0.3);
+}
+
+.parolQuti {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.parolToggle {
+  position: absolute;
+  right: 10px;
+  background: transparent;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.parolToggle:hover {
+  background-color: inherit;
+}
+
+.parolToggle i{
+  font-size: 15px;
+}
+
+.pastkiQator {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.85rem;
+}
+
+.eslabQol input {
+  margin-right: 5px;
+  color: #2575fc;
+}
+
+.unutdingmi {
+  color: #2575fc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.unutdingmi:hover {
+  color: #6a11cb;
+}
+
+.tugma {
+  background: linear-gradient(90deg, #6a11cb, #2575fc);
+  color: #fff;
+  border: none;
+  padding: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.tugma:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.ajratkich {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 25px 0;
+}
+
+.ajratkich span {
+  flex: 1;
+  height: 1px;
+  background: #ddd;
+}
+
+.ajratkich p {
+  font-size: 0.9rem;
+  color: #999;
+}
+
+.sociallar {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.social {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  color: #2575fc;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: #fff;
+}
+
+.social:hover {
+  background: #f0f0f0;
+  transform: translateY(-2px);
+}
+
+.socialIkon {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.pastMatn {
+  font-size: 0.85rem;
+  color: #555;
+}
+
+.maydon input {
+  color: #ffffff;
+  background-color: #777e86;
+
+}
+
+.royxatdan {
+  color: #2575fc;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.royxatdan:hover {
+  color: #6a11cb;
+}
+
+.eslabQol {
+  color: #2575fc;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive */
+@media (max-width: 480px) {
+  .karta {
+    padding: 30px 20px;
+  }
+
+  .sarlavha {
+    font-size: 1.7rem;
+  }
+
+  .tagline {
+    font-size: 0.8rem;
+  }
+
+  .kiritish {
+    font-size: 0.9rem;
+  }
+
+  .tugma {
+    font-size: 0.95rem;
+  }
+}

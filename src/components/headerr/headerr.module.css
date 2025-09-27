@@ -1,0 +1,189 @@
+.topbar {
+    background: #5f00d4;
+    color: #fff;
+    font-size: 14px;
+    padding: 6px 0;
+}
+
+.container {
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.chap_qism a {
+    color: #fff;
+}
+
+.ong_qism {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.til_tanlash {
+    background: #222;
+    color: #fff;
+    border: 1px solid #444;
+    padding: 3px 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.kirish {
+    background: #782aff;
+    color: #ffffff;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 13px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.kirish:hover {
+    background: #008cdd;
+}
+
+.profil a {
+    color: #fff;
+}
+
+
+.moon_sun {
+    padding: 5px;
+    background-color: rgb(71, 136, 255);
+    cursor: pointer;
+    color: #dfff3d;
+    border: none;
+    border-radius: 10px;
+}
+
+.moon_sun:hover {
+    background-color: #ff9900;
+    transition: 0.5s;
+}
+
+.moon_sun:active {
+    scale: 0.8;
+}
+
+.support {
+    background-color: #b5b5b5;
+    width: 50px;
+    height: 50px;
+    padding: 5px 10px;
+    color: #fff;
+    font-size: 15px;
+    border-radius: 10px;
+}
+
+.support:hover {
+    background-color: #782aff;
+    transition: 0.5s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.kirish {
+    text-align: end;
+}
+
+
+
+
+
+
+
+
+@media (max-width: 800px) {
+    .profil {
+        display: none;
+    }
+
+}
+
+@media (max-width: 600px) {
+    .profil {
+        display: none;
+    }
+
+    .topbar {
+        display: none;
+    }
+
+    .ong_qism {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .kirish {
+        display: none;
+    }
+
+
+    .container {
+        flex-direction: column;
+        gap: 6px;
+        text-align: center;
+    }
+
+    .ong_qism {
+        gap: 8px;
+    }
+}
+
+

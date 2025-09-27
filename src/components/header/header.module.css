@@ -1,0 +1,310 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1220px;
+    margin: 0 auto;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.sarlavha {
+    background: linear-gradient(90deg, #4a00e0, #8e2de2);
+    color: white;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.container {
+    max-width: 1220px;
+    margin: auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.belgi img {
+    width: 180px;
+}
+
+.belgi {
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.menyu {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.menyu a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.menyu a:hover {
+    color: #ffd700;
+}
+
+.ong {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.qidiruv input {
+    padding: 8px 35px;
+    border-radius: 10px;
+    width: 500px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+}
+
+.tanlash {
+    background: white;
+    color: #4a00e0;
+    border-radius: 20px;
+    padding: 6px 18px;
+    font-size: 14px;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    display: none;
+}
+
+
+.tanlash:hover {
+    background-color: #ffd700;
+    transition: 0.5s;
+}
+
+.tanlash:active {
+    scale: 0.9;
+}
+
+#like {
+    cursor: pointer;
+    font-size: 25px;
+
+}
+
+#like:hover {
+    color: #ffd700;
+    transition: 0.5s;
+}
+
+#like:active {
+    scale: 0.8;
+}
+
+.kirish {
+    background: #ffd700;
+    color: #4a00e0;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.kirish:hover {
+    background: white;
+    color: #4a00e0;
+}
+
+.mobilTugma {
+    display: none;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+
+
+#menu:hover {
+    color: #ffd700;
+    transition: 0.5s;
+}
+
+#menu:active {
+    scale: 0.8;
+}
+
+.like {
+    color: aliceblue;
+}
+
+.qidiruv {
+    background: white;
+    border-radius: 14px;
+    padding: 5px 14px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+.qidiruv:hover {
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+    transform: translateY(-1px);
+}
+
+.icon {
+    font-size: 18px;
+    color: #888;
+}
+
+.qidiruv input {
+    border: none;
+    outline: none;
+    flex: 1;
+    font-size: 15px;
+    color: #111;
+    background: transparent;
+}
+
+.qidiruv input::placeholder {
+    color: #888;
+    font-size: 14px;
+    letter-spacing: 0.3px;
+}
+
+
+#savat{
+    font-size: 20px;
+}
+#savat:hover{
+    color: #ffd700;
+    transition: 0.5s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    .menyu {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: #4a00e0;
+        flex-direction: column;
+        align-items: center;
+        padding: 15px 0;
+        display: none;
+    }
+
+    .tanlash {
+        display: block;
+    }
+
+    .belgi img {
+        width: 90px;
+    }
+
+    .menyu.ochiq {
+        display: flex;
+    }
+
+    .qidiruv {
+        display: none;
+    }
+
+    .mobilTugma {
+        display: block;
+    }
+
+    #savat {
+        display: none;
+    }
+}

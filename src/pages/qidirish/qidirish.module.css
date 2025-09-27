@@ -1,0 +1,61 @@
+.qidirish_container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.search_box {
+    display: flex;
+    align-items: center;
+    background: #f5f5f5;
+    border-radius: 12px;
+    padding: 10px 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.search_box:focus-within {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    background: #fff;
+}
+
+.search_icon {
+    font-size: 18px;
+    color: #666;
+    margin-right: 10px;
+}
+
+.search_box input {
+    border: none;
+    outline: none;
+    flex: 1;
+    font-size: 16px;
+    background: transparent;
+}
+
+.filter_buttons {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.filter_btn {
+    padding: 8px 16px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    background: #fafafa;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.filter_btn:hover {
+    background: #f0f0f0;
+}
+
+.filter_btn.active {
+    background: #007bff;
+    color: white;
+    border-color: #007bff;
+}

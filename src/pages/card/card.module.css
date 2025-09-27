@@ -1,0 +1,677 @@
+.container {
+    display: grid;
+    gap: 25px;
+    justify-content: center;
+    padding: 40px;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+
+.card {
+    width: 250px;
+    background-color: inherit;
+    border-radius: 20px;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    text-decoration: none;
+
+}
+
+.card:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+    transition: 0.5s;
+}
+
+
+.imageBox {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.imageBox img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.likeBtn {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: rgba(255, 255, 255, 0.9);
+    border: none;
+    padding: 8px;
+    border-radius: 50%;
+    display: flex;
+    cursor: pointer;
+    font-size: 18px;
+    color: #e63946;
+    transition: 0.3s;
+}
+
+.likeBtn:hover {
+    background: #e63946;
+    color: #fff;
+}
+
+
+.content {
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: center;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+}
+
+.price {
+    font-size: 16px;
+    color: #4a00e0;
+    margin: 8px 0;
+    font-weight: bold;
+}
+
+.cartBtn {
+    width: 100%;
+    background: linear-gradient(90deg, #4a00e0, #8e2de2);
+    border: none;
+    padding: 12px;
+    border-radius: 12px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+}
+
+.cartBtn:hover {
+    background: linear-gradient(90deg, #8e2de2, #4a00e0);
+}
+
+
+.mahsulot {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.mahsulot img {
+    width: 90%;
+    height: auto;
+    object-fit: contain;
+}
+
+
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+
+.box {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+
+.card {
+    background: white;
+    padding: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+
+.likeBtn {
+    background: transparent;
+    border: none;
+    font-size: 23px;
+    cursor: pointer;
+    outline: none;
+    padding: 0;
+}
+
+.likeBtn:hover {
+    background: transparent;
+    transform: scale(1.05);
+    transition: 0.2s ease;
+}
+
+
+
+
+
+@media (max-width: 992px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1px;
+        padding: 15px;
+    }
+
+    .imageBox {
+        height: 170px;
+    }
+
+    .mahsulot {
+        width: 100%;
+        height: auto;
+        padding: 10px 0;
+    }
+
+    .title {
+        font-size: 14px;
+        text-align: left;
+        padding-left: 2px;
+    }
+
+    .price {
+        text-align: left;
+        padding-left: 2px;
+        font-size: 12px;
+        font-weight: 200;
+    }
+
+
+
+    .cartBtn {
+        width: 100%;
+        font-size: 11px;
+        padding: 10px;
+        font-weight: 100;
+    }
+
+    .card span {
+        font-size: 10px;
+        color: rgb(169, 169, 169);
+        text-align: left;
+        padding-left: 2px;
+    }
+
+    .card {
+        padding: 0 0 0 0;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        gap: 0;
+    }
+
+    .imageBox {
+        width: 100%;
+        height: 150px;
+    }
+
+    .imageBox img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .likeBtn {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        padding: 5px;
+        font-size: 16px;
+    }
+
+    .content {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .title {
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    .price {
+        font-size: 12px;
+        font-weight: 400;
+    }
+
+    .cartBtn {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .mahsulot img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+
+    .box {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card {
+        padding: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .likeBtn {
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        font-size: 14px;
+    }
+
+    .likeBtn:hover {
+        transform: scale(1.1);
+        transition: 0.2s ease;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    .box {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .card {
+        padding: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .card:hover {
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        transition: box-shadow 0.3s ease;
+    }
+
+    .card .content {
+        padding: 10px;
+    }
+
+    .card .title {
+        font-size: 16px;
+        font-weight: 600;
+        color: #333;
+    }
+
+    .card .price {
+        font-size: 14px;
+        color: #4a00e0;
+        margin: 5px 0;
+        font-weight: bold;
+    }
+
+    .card .cartBtn {
+        width: 100%;
+        background: linear-gradient(90deg, #4a00e0, #8e2de2);
+        border: none;
+        padding: 10px;
+        border-radius: 10px;
+        color: #fff;
+        font-size: 14px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: background 0.3s ease;
+    }
+
+    .card .cartBtn:hover {
+        background: linear-gradient(90deg, #8e2de2, #4a00e0);
+    }
+
+    .card .mahsulot {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    .card .mahsulot img {
+        width: 90%;
+        height: auto;
+        object-fit: contain;
+    }
+
+    .card span {
+        font-size: 10px;
+        color: rgb(169, 169, 169);
+        text-align: left;
+        padding-left: 2px;
+    }
+
+    .card .imageBox {
+        width: 100%;
+        height: 150px;
+    }
+
+    .card .imageBox img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .card .likeBtn {
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        padding: 5px;
+        font-size: 14px;
+    }
+
+    .card .likeBtn:hover {
+        transform: scale(1.1);
+        transition: 0.2s ease;
+    }
+
+    .card .content {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .card .title {
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    .card .price {
+        font-size: 12px;
+        font-weight: 400;
+    }
+
+    .card .cartBtn {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .card .mahsulot img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+
+    .card .box {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .card {
+        padding: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .card:hover {
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        transition: box-shadow 0.3s ease;
+    }
+
+    .card .content {
+        padding: 10px;
+    }
+
+    .card .title {
+        font-size: 16px;
+        font-weight: 600;
+        color: #333;
+    }
+
+    .card .price {
+        font-size: 14px;
+        color: #4a00e0;
+        margin: 5px 0;
+        font-weight: bold;
+    }
+
+    .card .cartBtn {
+        width: 100%;
+        background: linear-gradient(90deg, #4a00e0, #8e2de2);
+        border: none;
+        padding: 10px;
+        border-radius: 10px;
+        color: #fff;
+        font-size: 14px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: background 0.3s ease;
+    }
+
+    .card .cartBtn:hover {
+        background: linear-gradient(90deg, #8e2de2, #4a00e0);
+    }
+
+    .card .mahsulot {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    .card .mahsulot img {
+        width: 90%;
+        height: auto;
+        object-fit: contain;
+    }
+
+    .card span {
+        font-size: 10px;
+        color: rgb(169, 169, 169);
+        text-align: left;
+        padding-left: 2px;
+    }
+
+    .card .imageBox {
+        width: 100%;
+        height: 150px;
+    }
+
+    .card .imageBox img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .card .likeBtn {
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        padding: 5px;
+        font-size: 14px;
+    }
+
+    .card .likeBtn:hover {
+        transform: scale(1.1);
+        transition: 0.2s ease;
+    }
+
+    .card .content {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .card .title {
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    .card .price {
+        font-size: 12px;
+        font-weight: 400;
+    }
+
+    .card .cartBtn {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .card .mahsulot img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+
+    .card .box {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .card {
+        padding: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .card:hover {
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        transition: box-shadow 0.3s ease;
+    }
+
+    .card .content {
+        padding: 10px;
+    }
+
+    .card .title {
+        font-size: 16px;
+        font-weight: 600;
+        color: #333;
+    }
+
+    .card .price {
+        font-size: 14px;
+        color: #4a00e0;
+        margin: 5px 0;
+        font-weight: bold;
+    }
+
+    .card .cartBtn {
+        width: 100%;
+        background: linear-gradient(90deg, #4a00e0, #8e2de2);
+        border: none;
+        padding: 10px;
+        border-radius: 10px;
+        color: #fff;
+        font-size: 10px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: background 0.3s ease;
+    }
+
+    .card .cartBtn:hover {
+        background: linear-gradient(90deg, #8e2de2, #4a00e0);
+    }
+
+    .card .mahsulot {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    .card .mahsulot img {
+        width: 90%;
+        height: auto;
+        object-fit: contain;
+    }
+
+    .card span {
+        font-size: 10px;
+        color: rgb(169, 169, 169);
+        text-align: left;
+        padding-left: 2px;
+    }
+
+    .card {
+        width: 170px;
+    }
+
+
+}
+
+
+@media (max-width: 395px) and (min-width: 320px) {
+    .container {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 10px;
+    }
+
+    .card {
+        max-width: 250px;
+        width: 150px;
+        padding: 1px;
+        height: auto;
+        background-color: inherit;
+        box-shadow: none;
+    }
+
+    .productsWrapper .card {
+        width: 250px;
+    }
+
+
+    .mahsulot {
+        height: 300px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .mahsulot img {
+        width: 100%;
+    }
+
+    .imageBox img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .title {
+        font-size: 14px;
+    }
+
+    .price {
+        font-size: 12px;
+    }
+
+    .cartBtn {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .mahsulot img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+
+
+}

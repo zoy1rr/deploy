@@ -1,0 +1,21 @@
+.silider {
+    height: 400px;
+}
+
+@media (max-width: 768px) {
+    .silider {
+        height: auto;
+        padding: 0 20px;
+    }
+
+    .silider img {
+        height: 2100px;
+        width: 1px;
+    }
+
+    .siliderimg {
+        margin-bottom: 20px;
+        height: auto;
+    }
+
+}
